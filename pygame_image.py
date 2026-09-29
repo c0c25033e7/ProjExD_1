@@ -18,7 +18,7 @@ def main():
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return
-            x = (x + 1) % 3200
+        x = tmr % 3200
         screen.blit(bg_img, [-x, 0])
         screen.blit(bg_img2, [-x + 1600, 0])
         screen.blit(bg_img, [-x + 3200, 0])    
